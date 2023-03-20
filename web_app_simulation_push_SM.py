@@ -24,7 +24,7 @@ st.set_page_config(page_title="Simulation tarifaire O2S",
 
 
 onglets = st.sidebar.radio('Onglets', 
-                 options=["Simulation"])
+                 options=["Simulation SM"])
 
 
 # Select Values
