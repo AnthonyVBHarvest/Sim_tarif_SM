@@ -356,6 +356,7 @@ def pie_rep_spli(df, liste_col, date_choix):
                 values = round(df1["Valeur"], 0),
                 names = "Nom",
                 title = f"Répartition par split pour la nouvelle facturation O2S-SM en {date_choix}",
+                color_discrete_sequence=px.colors.qualitative.Pastel,
                 width=largeur,
                 height=hauteur)
     fig.update_traces(textinfo='value+percent', marker=dict(line=dict(color='#000000', width=1)))
