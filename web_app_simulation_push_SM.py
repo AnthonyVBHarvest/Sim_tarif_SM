@@ -24,7 +24,7 @@ st.set_page_config(page_title="Simulation tarifaire O2S",
 
 
 onglets = st.sidebar.radio('Onglets', 
-                 options=["Simulation SM"])
+                 options=["Simulation"])
 
 
 # Select Values
@@ -294,7 +294,7 @@ def Simulation(df_new_price, df_old_fact):
 
 
 if onglets == "Simulation":
-    st.title("Simulation")
+    st.title("Simulation SM")
     select_values()
     Simulation(df_new_price, df_old_fact)
 
